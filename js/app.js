@@ -107,7 +107,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let result = multiply(multArr[0], multArr[1])[0];
+  result = multiply(result, multArr[2])[0];
+  let multiplyString =  `The numbers ${multArr} have a product of 24.`;
+  return [result, multiplyString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
